@@ -7,9 +7,9 @@ Kasa fait partie des leaders de la location d’appartements entre particuliers 
 
 
 
-#### NPM START : </br>Lancement de l'application.
+#### `NPM START` : </br>Lancement de l'application.
 
-#### NPM RUN SERVER : </br>Lancement de la simulation du Backend avec json-server.
+#### `NPM RUN SERVER` : </br>Lancement de la simulation du Backend avec json-server.
 
 #### MODULES UTILISES DANS CE PROJET:</br>-React-router-dom</br>-Axios </br>-Sass </br>-json-server
 
