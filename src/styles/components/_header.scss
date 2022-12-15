@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        height: 47px;
+        width: 145px;
+    }
+
+
+    ul {
+        padding-top: 8%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 140px;
+        height: 17px;
+        gap: 10%;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    a {
+        color: $color-red;
+    }
+}
+
+.nav-active {
+    position: relative;
+
+    &::after {
+        content: "";
+        height: 1px;
+        width: 0;
+        background: $color-red;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-animation: anim 0.3s ease forwards;
+        animation: anim 0.6s ease forwards;
+
+        @-webkit-keyframes anim {
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes anim {
+            to {
+                width: 100%;
+            }
+        }
+    }
+}

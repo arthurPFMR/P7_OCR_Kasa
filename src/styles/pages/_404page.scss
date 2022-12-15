@@ -1,0 +1,24 @@
+.error {
+    color: $color-red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+    .code {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 96px;
+    }
+
+    a {
+        text-decoration: underline;
+        color: $color-red;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+    }
+}
