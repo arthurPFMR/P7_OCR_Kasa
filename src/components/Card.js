@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Card = ({ rental }) => {
-    return (
-        <a href={"http://localhost:3000/rental/" + rental.id}>
-        <li className='card'>
-            <img src={rental.cover} alt={"Nom de la location : " + rental.title}/>
-            <div className="card-infos">
-                <h3>{rental.title}</h3>
-            </div>
-        </li>
-        </a>
-    );
+  return (
+    <NavLink to={"/rental"} className="to-rental-page">
+      <li className="card">
+        <img src={rental.cover} alt={"Nom de la location : " + rental.title} />
+        <div className="card-infos">
+          <h3>{rental.title}</h3>
+        </div>
+      </li>
+    </NavLink>
+  );
 };
 
 export default Card;

@@ -2,6 +2,7 @@
     color: $color-red;
     display: flex;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
     text-align: center;
     font-style: normal;
@@ -14,7 +15,7 @@
         font-size: 96px;
     }
 
-    a {
+    .link-to-home {
         text-decoration: underline;
         color: $color-red;
         font-style: normal;

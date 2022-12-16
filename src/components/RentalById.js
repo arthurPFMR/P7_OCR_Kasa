@@ -1,17 +1,36 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
-import Card from "./Card";
+import axios from "axios";
+
+import Description from "./Description";
 
 
 const RentalById = () => {
-    const [data, setData] = useState([]);
-    // useEffect(() => {
-    //   axios.get("http://localhost:3000/rental/" + rentals.id).then((res) => setData(res.data));
-    // }, []);
+  const [rentalData, setRentalData] = useState([]);
+  useEffect(() => {
+    axios.get("http://localhost:3004/rentals").then((res) => setRentalData(res.data));
+    // console.log(rentalData);
+  }, []);
   return (
     <div>
-        {/* la carte carroussel */}
+    <div>
+      {rentalData.map(
+        (rental) => (
+          // (<Carousel key={rental.id} rental={rental} />),
+          (<Description key={rental.id} rental={rental} />)
+        )
+      )}
     </div>
+        <div>
+        {rentalData.map(
+          (rental) => (
+            // (<Carousel key={rental.id} rental={rental} />),
+            (<Description key={rental.id} rental={rental} />)
+          )
+        )}
+      </div>
+      </div>
+
+
   );
 };
 
