@@ -1,6 +1,8 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
 
     img {
         height: 47px;
@@ -22,6 +24,8 @@
 
     a {
         color: $color-red;
+        font-weight: 500;
+        font-size: var(--mediumFont);
     }
 }
 
