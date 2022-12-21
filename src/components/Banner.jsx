@@ -5,7 +5,7 @@ import bannerImg from "../assets/images/Eric-Muhr-Banner.png";
 const Banner = () => {
   return (
     <div className="banner">
-      <img src={bannerImg} alt="Photo représentant une côte sauvage" />
+      <img src={bannerImg} alt="Bannière du site Kasa représentant une côte sauvage" />
       <p>
         Chez vous,
         <br />

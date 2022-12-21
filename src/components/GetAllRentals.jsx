@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Card from "./Card";
 
-const Rentals = () => {
+const GetallRentals = () => {
   const [rentalsData, setRentalsData] = useState([]);
   useEffect(() => {
     axios.get("http://localhost:3004/rentals" ).then((res) => setRentalsData(res.data));
@@ -17,4 +17,4 @@ const Rentals = () => {
   );
 };
 
-export default Rentals;
+export default GetallRentals;

@@ -1,14 +1,16 @@
 import React from "react";
 import Banner from "../components/Banner";
-import Rentals from "../components/RentalsOfHome";
+import Footer from "../components/Footer";
+import GetallRentals from "../components/GetAllRentals";
 
 const Home = () => {
   return (
     <div className="DOM">
       <Banner />
       <article>
-        <Rentals />
+        <GetallRentals />
       </article>
+      <Footer />
     </div>
   );
 };
