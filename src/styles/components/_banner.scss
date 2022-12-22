@@ -22,48 +22,14 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .banner {
-        margin-top: 1vw;
-
-        .image {
-            border-radius: 10px;
-            height: 25vw;
-        }
-
-        .text {
-            font-size: 0;
-        }
-
-        .text::before {
-            font-size: 6vw;
-            align-items: flex-start;
-            margin-right: 28vw;
-            font-weight: 600;
-            line-height: 6vw;
-        }
-    }
-
-    @media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
         .banner {
-            margin-top: 1vw;
-        }
-
+            
+            border-radius: 10px;
+       
         img {
             border-radius: 10px;
             height: 25vw;
-        }
-
-        h3 {
-            font-size: 0;
-        }
-
-        h3:before {
-            font-size: 6vw;
-            align-items: flex-start;
-            margin-right: 28vw;
-            font-weight: 600;
-            line-height: 6vw;
         }
     }
 }

@@ -2,6 +2,9 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+import previousArrow from "../assets/images/previousArrow.png"
+import nextArrow from "../assets/images/nextArrow.png"
+
 const Slider = () => {
   const params = useParams();
   const [rental, setRental] = useState([]);
@@ -22,13 +25,19 @@ const Slider = () => {
   };
 
   const thumbs = rental.pictures;
-  console.log(thumbs);
+  // console.log(thumbs);
 
   return (
-    <div>
-      <button onClick={handlePrevious}>arrow</button>
-      <img src={thumbs[currentImg]} alt="" />
-      <button onClick={handleNext}>arrow</button>
+    <div className="slider">
+      {/* <img src={thumbs[currentImg]} alt="" /> */}
+      <div className="slideBtn">
+      <button className="previousBtn" onClick={handlePrevious}>
+        <img src={previousArrow} alt="Bouton précédent" />
+        </button>
+      <button className="nextBtn" onClick={handleNext}>
+      <img src={nextArrow} alt="Bouton suivant" />
+      </button>
+      </div>
     </div>
   );
 };
