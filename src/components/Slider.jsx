@@ -2,8 +2,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import previousArrow from "../assets/images/previousArrow.png"
-import nextArrow from "../assets/images/nextArrow.png"
+import previousArrow from "../assets/images/previousArrow.png";
+import nextArrow from "../assets/images/nextArrow.png";
 
 const Slider = () => {
   const params = useParams();
@@ -11,6 +11,7 @@ const Slider = () => {
 
   useEffect(() => {
     const rentalApiUrl = `http://localhost:3004/rentals/${params.rentalId}`;
+    // console.log(rentalApiUrl);
     axios.get(rentalApiUrl).then((res) => setRental(res.data));
   }, [params]);
 
@@ -25,28 +26,30 @@ const Slider = () => {
   };
 
   const thumbs = rental.pictures;
-  // console.log(thumbs);
+  console.log(rental);
+
 
   return (
     <div className="slider">
-      {/* <img src={thumbs[currentImg]} alt="" /> */}
+      {/* on a galéré là :) */}
+      <img src={thumbs[currentImg]} alt="" />
+      {/* {rental.pictures.map((rental, index) => (
+        <div key={index}>
+          <img src={rental.pictures} alt="" />
+        </div>
+      ))} */}
+
       <div className="slideBtn">
-      <button className="previousBtn" onClick={handlePrevious}>
-        <img src={previousArrow} alt="Bouton précédent" />
+        <button className="previousBtn" onClick={handlePrevious}>
+          <img src={previousArrow} alt="Bouton précédent" />
         </button>
-      <button className="nextBtn" onClick={handleNext}>
-      <img src={nextArrow} alt="Bouton suivant" />
-      </button>
+        <button className="nextBtn" onClick={handleNext}>
+          <img src={nextArrow} alt="Bouton suivant" />
+        </button>
       </div>
     </div>
   );
 };
 
 export default Slider;
-{
-  /* {rental.map((rental, index) => (
-          <div key={index}>
-            <img src={rental.picture} alt="" />
-          </div>
-        ))} */
-}
+

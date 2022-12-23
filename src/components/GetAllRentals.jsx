@@ -5,9 +5,9 @@ import Card from "./Card";
 const GetallRentals = () => {
   const [rentalsData, setRentalsData] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:3004/rentals" ).then((res) => setRentalsData(res.data));
+    axios.get("http://localhost:3004/rentals").then((res) => setRentalsData(res.data));console.log("ok");
   }, []);
-
+console.log(rentalsData);
   return (
     <div className="rentalsImages">
         {rentalsData.map((rental, id) => (
