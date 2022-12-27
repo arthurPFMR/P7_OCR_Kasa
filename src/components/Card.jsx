@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Card = ({ rental }) => {
+const Card = (props) => {
   return (
-    <NavLink to={"/rental/" + rental.id} className="to-rental-page">
+    <NavLink to={"/rental/" + props.id} className="to-rental-page">
       <div className="card">
-        <img src={rental.cover} alt={"Nom de la location : " + rental.title} />
-          <h3>{rental.title}</h3>
+        <img src={props.cover} alt={"Nom de la location : " + props.title} />
+          <h3>{props.title}</h3>
       </div>
     </NavLink>
   );

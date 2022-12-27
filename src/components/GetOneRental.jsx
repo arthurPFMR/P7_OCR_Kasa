@@ -1,34 +1,17 @@
-// import axios from "axios";
-// import { useEffect, useState } from "react";
 // import { useParams } from "react-router-dom";
-import Slider from "./Slider";
+// import data from "../assets/database/db.json"
+// import Slider from "./Slider";
 
-const GetOneRental = () => {
-  // const params = useParams();
-  // const [rental, setRental] = useState([]);
+// const GetOneRental = () => {
+//   const { id } = useParams();
 
-  // useEffect(() => {
-  //   const rentalApiUrl = `http://localhost:3004/rentals/${params.rentalId}`;
-  //   // console.log(rentalApiUrl);
-  //   axios.get(rentalApiUrl).then((res) => setRental(res.data));
-  // }, [params]);
-  // console.log(rental.tags);
+//   const rental = data.find((data) => data.rentalId === id);console.log(rental);
 
-  return (
-    <main>
-      <Slider />
-      {/* <h2>{rental.title}</h2>
-      <p>{rental.location}</p> */}
-      {/* <p>{rental.description}</p> */}
-      {/* <div className="host">
-          <p>{rental.host.name}</p>
-          <img
-            src={rental.host.picture}
-            alt={"Photo de " + rental.host.name + ", propriétaire du logement"}
-          />
-        </div> */}
-    </main>
-  );
-};
+//   return (
+//     <main>
+//       <Slider pictures={rental.pictures} title={rental.title} />
+//     </main>
+//   );
+// };
 
-export default GetOneRental;
+// export default GetOneRental;

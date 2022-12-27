@@ -1,18 +1,16 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
 import Card from "./Card";
 
-const GetallRentals = () => {
-  const [rentalsData, setRentalsData] = useState([]);
-  useEffect(() => {
-    axios.get("http://localhost:3004/rentals").then((res) => setRentalsData(res.data));console.log("ok");
-  }, []);
-console.log(rentalsData);
+const GetallRentals = (props) => {
   return (
     <div className="rentalsImages">
-        {rentalsData.map((rental, id) => (
-          <Card key={id} rental={rental} />
-        ))}
+      {props.data.map((data) => (
+        <Card
+          id={data.id}
+          title={data.title}
+          cover={data.cover}
+          key={data.id}
+        />
+      ))}
     </div>
   );
 };
