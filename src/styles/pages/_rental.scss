@@ -1,0 +1,41 @@
+.informations {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.renterInfo {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: repeat(2, 1fr);
+
+
+    .host {
+        grid-area: 1 / 1 / 2 / 2;
+        padding-left: 2vw;
+    }
+
+    .hostImg {
+        grid-area: 1 / 2 / 2 / 3;
+
+        img {
+            border-radius: 50%;
+        }
+
+    }
+    .ratingStars {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+}
+
+// .parent {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-template-rows: repeat(2, 1fr);
+//     grid-column-gap: 0px;
+//     grid-row-gap: 0px;
+//     }
+
+//     .div1 { grid-area: 1 / 1 / 2 / 2; }
+//     .div2 { grid-area: 1 / 2 / 2 / 3; }
+//     .div3 { grid-area: 2 / 2 / 3 / 3; }

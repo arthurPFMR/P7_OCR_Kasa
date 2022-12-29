@@ -5,7 +5,7 @@ import nextArrow from "../assets/images/nextArrow.png";
 
 const Slider = (props) => {
   const thumbs = props.pictures;
-  console.log(thumbs);
+
   const [currentImg, setCurrentImg] = useState({ index: 0 });
 
   const handleNext = () => {
@@ -18,8 +18,7 @@ const Slider = (props) => {
 
   return (
     <div className="slider">
-      <img src={props.pictures} alt="" />
-      <h2>{props.title}</h2>
+      <img src={props.pictures} alt={props.title} />
       <div className="slideBtn">
         <button className="previousBtn" onClick={handlePrevious}>
           <img src={previousArrow} alt="Bouton précédent" />
@@ -28,7 +27,7 @@ const Slider = (props) => {
           <img src={nextArrow} alt="Bouton suivant" />
         </button>
       </div>
-      <p className="counterImg">{props.pictures.index}</p>
+      {/* <p className="counterImg">{props.pictures.index}</p> */}
     </div>
   );
 };

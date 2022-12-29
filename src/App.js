@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from './components/Navigation';
-import Router from './components/Router';
+import Router from './router/Router';
 
 
 const App = () => {
