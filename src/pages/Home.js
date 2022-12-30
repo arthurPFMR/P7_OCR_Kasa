@@ -11,7 +11,6 @@ const Home = () => {
       <article>
         <GetallRentals data={data} />
       </article>
-      <Footer />
     </div>
   );
 };
