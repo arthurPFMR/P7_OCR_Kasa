@@ -3,14 +3,15 @@ Kasa fait partie des leaders de la location d’appartements entre particuliers 
 
 ![Alt text](public/images/visu.png)
 
-### Projet 7 d'OpenClassRooms : </br>Créez une application web de location immobilière avec React.
+### P7 OpenClassRooms : </br>Create a web application of property rental with React.
 
 
 
-#### `NPM START` : </br>Lancement de l'application.
+#### `NPM START` : </br>Launch application.
 
-#### `NPM RUN SERVER` : </br>Lancement de la simulation du Backend avec json-server.
+###### The database is available in the src/assets folder.
 
-#### MODULES UTILISES DANS CE PROJET:</br>-React-router-dom</br>-Axios </br>-Sass </br>-json-server
+
+#### MODULES UTILISES DANS CE PROJET:</br>-React-router-dom </br>-Sass 
 
 

@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Tags = (props) => {
-  return (
-<div className="tags">
-  {props.keywords}
-</div>
-  );
+  return <div className="tags">{props.keywords}</div>;
 };
 
 export default Tags;

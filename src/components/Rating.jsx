@@ -1,28 +1,28 @@
-import React from 'react';
+import { useEffect, useState } from "react";
 
-import fullStar from "../assets/images/full-star.png"
-import emptyStar from "../assets/images/empty-star.png"
+import fullStar from "../assets/images/full-star.png";
+import emptyStar from "../assets/images/empty-star.png";
+
+const Rating = (props) => {
+    const [emptyStarNb, setEmptyStarNb] = useState();
+    const maxRating = 5;
+
+    useEffect(() => {
+        +props.rating < maxRating && setEmptyStarNb(maxRating - +props.rating);
+    }, [props.rating]);
 
 
-// starIndex = "5" soit (x + y)
-// rating = full-star = x
-// empty-star = y soit (5 - x)
+  return (
+    <div className="ratingStars">
+        {[...Array(+props.rating)].map((e, index) => {
+            return <img className="star" key={index} src={fullStar} alt="Note du loueur" />;
+        })}
+         {emptyStarNb && [...Array(emptyStarNb)].map((e, index) => {
+            return <img className="star" key={index} src={emptyStar} alt="Note du loueur" />;
+        })}
 
-// si rating = x :
-//                  => full-star = x
-//                  => empty-star = starIndex - full-star
-
-
-const Rating = () => {
-    return (
-        <div className='ratingStars'>
-            <img src={ fullStar } alt="Note de la location" />
-            <img src={ fullStar } alt="Note de la location" />
-            <img src={ fullStar } alt="Note de la location" />
-            <img src={ fullStar } alt="Note de la location" />
-            <img src={ emptyStar } alt="Note de la location" />
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Rating;

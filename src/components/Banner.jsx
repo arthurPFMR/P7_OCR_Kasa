@@ -6,11 +6,10 @@ const Banner = () => {
   return (
     <div className="banner">
       <img src={bannerImg} alt="Bannière du site Kasa représentant une côte sauvage" />
-      <p>
-        Chez vous,
-        <br />
-        partout et ailleurs
-      </p>
+      <div className="titleBanner">
+      <p>Chez vous,</p>
+      <p>partout et ailleurs</p>
+      </div>
     </div>
   );
 };

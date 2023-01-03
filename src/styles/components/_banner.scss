@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-top: 4vw;
+    // margin-top: 2vw;
 
     img {
         object-fit: cover;
@@ -13,23 +13,27 @@
         filter: brightness(75%);
     }
 
-    p {
-        margin-right: 20vw;
+    .titleBanner {
+        display: flex;
+        gap: 1rem;
         position: absolute;
-        color: white;
+        color: $color-white;
         font-size: 3.4vw;
-        font-weight: 400;
     }
 }
 
  @media screen and (max-width: 768px) {
         .banner {
-            
             border-radius: 10px;
-       
+            justify-content: flex-start; 
         img {
             border-radius: 10px;
             height: 25vw;
+        }
+        .titleBanner {
+            flex-direction: column;
+            gap: 3%;
+            margin-left: 4vw;
         }
     }
 }

@@ -10,19 +10,19 @@ const Rental = () => {
   const { id } = useParams();
 
   const rental = data.find((data) => data.id === id);
+  console.log(rental.rating);
   // console.log(rental);
   return !rental ? (
     <Navigate to="/notfoundpage" />
   ) : (
     <>
       <main>
-        {/* .map */}
-        <>
+        {/* <>
         {rental.pictures.map((picture, index) => (
           <Slider pictures={picture} key={index} /> 
         ))}
-        </>
-        {/* <Slider pictures={rental.pictures} title={rental.title} /> */}
+        </> */}
+        <Slider pictures={rental.pictures} title={rental.title} />
         <div className="informations">
           <div className="rentalInfo">
             <h3>{rental.title}</h3>
@@ -38,7 +38,7 @@ const Rental = () => {
           <div className="renterInfo">
             <Host name={rental.host.name} picture={rental.host.picture} />
 
-            <Rating />
+            <Rating {...rental} />
           </div>
         </div>
       </main>

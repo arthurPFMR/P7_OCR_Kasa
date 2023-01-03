@@ -1,16 +1,16 @@
 .tagsBloc {
+    margin-top: 2vh;
     display: flex;
-    justify-content: space-between;
-    gap: 1vw;
-    font-weight: 500;
-    font-size: 14px;
+    gap: 1.5vw;
 
     .tags {
-        text-align: center;
-        color: $color-white;
         background-color: $color-red;
+        color: $color-white;
         border-radius: 10px;
+        text-align: center;
+        font-size: 1.2vw;
+        line-height: 2.5vh;
         height: 2.8vh;
-        width: 100%;
+        padding: 0.2vh 2.4vw;
     }
 }
