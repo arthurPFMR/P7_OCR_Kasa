@@ -1,0 +1,18 @@
+.aboutBanner {
+    img {
+        object-fit: cover;
+        border-radius: 25px;
+        width: 100%;
+        height: 15vw;
+        filter: brightness(75%);
+    }
+
+}
+
+.aboutCollapses {
+    margin-top: 4vh;
+    // margin-bottom: 27vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}

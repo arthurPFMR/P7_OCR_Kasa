@@ -1,0 +1,31 @@
+.collapse {
+    
+    .collapseTitle {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 1vh 2vw;
+        background-color: $color-red;
+        border-radius: 10px;
+        color: $color-white;
+        font-size: 18px;
+    }
+
+    .collapseContent {
+        
+        padding: 1vh 2vw;
+        padding-top: 2vh;
+        background-color: $color-background;
+        border-radius :0 0 10px 10px;
+        color: $color-red;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .arrows {
+        text-align: center;
+        width: 30px;
+        height: 20px;
+    }
+}
