@@ -3,7 +3,6 @@
     flex-direction: column;
     gap: 4vh;
     align-items: center;
-    align-content: center;
     background-color: black;
     height: 24vh;
     margin-top: 4vh;
@@ -12,4 +11,10 @@
     img {
         padding-top: 8vh;
     }
+}
+
+@media screen and (max-width: 768px) {
+p {
+    font-size: 12px;
+}
 }

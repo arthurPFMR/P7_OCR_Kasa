@@ -11,8 +11,6 @@ const Rental = () => {
   const { id } = useParams();
 
   const rental = data.find((data) => data.id === id);
-  console.log(rental.rating);
-  // console.log(rental);
   return !rental ? (
     <Navigate to="/notfoundpage" />
   ) : (

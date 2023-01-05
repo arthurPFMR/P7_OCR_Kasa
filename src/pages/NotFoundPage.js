@@ -3,9 +3,7 @@ import Error from "../components/Error";
 
 const NotFoundPage = () => {
   return (
-    <div className="DOM">
       <Error />
-    </div>
   );
 };
 

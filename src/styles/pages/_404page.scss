@@ -1,24 +1,31 @@
 .error {
+    position: relative;
     color: $color-red;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
     text-align: center;
     font-style: normal;
     font-size: 18px;
 
     .code {
+        margin-top: 10vh;
         font-style: normal;
         font-weight: 700;
         font-size: 96px;
     }
 
     .link-to-home {
+        margin-top: 10vh;
         text-decoration: underline;
         color: $color-red;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
     }
+}
+
+.window {
+    height: 80%;
 }

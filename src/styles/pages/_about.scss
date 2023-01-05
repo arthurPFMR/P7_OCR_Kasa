@@ -11,8 +11,16 @@
 
 .aboutCollapses {
     margin-top: 4vh;
-    // margin-bottom: 27vh;
     display: flex;
     flex-direction: column;
     gap: 4vh;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutBanner {
+        img {
+            object-fit: cover;
+            height: 25.5vh;
+        }
+    }
 }

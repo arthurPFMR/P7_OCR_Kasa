@@ -13,32 +13,24 @@
         }
 
         p {
-            // margin-top: 1vh;
             font-size: 2vh;
         }
-
     }
 }
 
+.host {
+    display: flex;
+    justify-content: flex-end;
+    ;
+    gap: 5%;
+    text-align: right;
+}
+
 .renterInfo {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: repeat(2, 1fr);
-
-    // grid-row-gap: 10px;
-    .host {
-        display: grid;
-        grid-area: 1 / 1 / 2 / 2;
-        font-size: 18px;
-
-        p {
-            text-align: right;
-        }
-    }
+    margin-top: 2vh;
 
     .hostImg {
-        grid-area: 1 / 2 / 2 / 3;
-        margin-left: 2.5vw;
+        width: 64px;
 
         img {
             border-radius: 50%;
@@ -47,12 +39,9 @@
     }
 
     .ratingStars {
-        margin-top: 2vh;
-        width: 100%;
-        grid-area: 2 / 1 / 3 / 3;
-        gap: 1vw;
         display: flex;
-        flex-direction: row;
+        gap: 1vw;
+        width: 100%;
     }
 
     .star {
@@ -65,11 +54,63 @@
     display: flex;
     justify-content: space-between;
     gap: 5%;
+    margin-top: 2vh;
 
     .description {
         width: 50%;
     }
+
     .equipments {
         width: 50%;
     }
+}
+
+@media screen and (max-width: 768px) {
+
+    .informations {
+        flex-direction: column;
+
+        .renterInfo {
+            display: flex;
+            flex-direction: row-reverse;
+
+            .host {
+                width: 30%;
+            }
+        }
+        .ratingStars {
+            align-items: center;
+        }
+        .star {
+            width: 20px;
+            height: 20px;
+        }
+
+    }
+
+    .rentalCollapse {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
+        gap: 2vh;
+    }
+
+    .description {
+        min-width: 100%;
+    }
+
+    .equipments {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .ratingStars {
+        .star {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
 }
