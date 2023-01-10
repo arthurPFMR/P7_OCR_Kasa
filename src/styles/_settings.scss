@@ -5,7 +5,7 @@
 
 $font-1: "font-1", sans-serif;
 
-$color-background:  #F7F7F7;
+$color-background: #F7F7F7;
 $color-red: rgba(255, 96, 96, 1);
 $color-white: #FFFFFF;
 
@@ -14,13 +14,14 @@ $color-white: #FFFFFF;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
+}
 
 body {
     font-family: $font-1;
     font-weight: 500;
     margin-left: 5%;
     margin-right: 5%;
+    min-height: 100%;
 }
 
 ul {

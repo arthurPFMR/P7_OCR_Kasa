@@ -1,20 +1,21 @@
 .rentalsImages {
-    display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.9vw 5.3vh;
-    grid-auto-flow: row;
-    background-color: $color-background;
-    border-radius: 25px;
-    padding: 2.3vw;
-    margin-top: 4vh;
-    width: 100%;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.9vw 5.3vh;
+  grid-auto-flow: row;
+  background-color: $color-background;
+  border-radius: 25px;
+  padding: 2.3vw;
+  margin-top: 4vh;
+  width: 100%;
 }
+
 @media screen and (max-width: 768px) {
-    .rentalsImages {
-      background-color: unset;
-      display: flex;
-      flex-direction: column;
-      margin-top: 4vw;
-      padding: unset;
-    }
+  .rentalsImages {
+    background-color: unset;
+    padding: unset;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vw;
   }
+}

@@ -1,5 +1,4 @@
 .error {
-    position: relative;
     color: $color-red;
     display: flex;
     flex-direction: column;
@@ -10,22 +9,42 @@
     font-size: 18px;
 
     .code {
-        margin-top: 10vh;
         font-style: normal;
         font-weight: 700;
-        font-size: 96px;
+        font-size: 288px;
+        line-height: 410px;
+    }
+
+    p {
+        font-size: 36px;
     }
 
     .link-to-home {
-        margin-top: 10vh;
+        margin-top: 15vh;
+        margin-bottom: 4vh;
         text-decoration: underline;
         color: $color-red;
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 18px;
     }
 }
 
-.window {
-    height: 80%;
+@media screen and (max-width: 768px) {
+    .error {
+        .code {
+            font-size: 96px;
+            line-height: 137px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        .link-to-home {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
 }

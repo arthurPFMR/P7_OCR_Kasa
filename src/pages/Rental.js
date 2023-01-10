@@ -31,7 +31,7 @@ const Rental = () => {
           </div>
           <div className="renterInfo">
             <Host name={rental.host.name} picture={rental.host.picture} />
-            <Rating {...rental} />
+            <Rating rating={rental.rating} />
           </div>
         </div>
         <div className="rentalCollapse">

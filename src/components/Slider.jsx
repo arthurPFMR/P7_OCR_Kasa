@@ -30,8 +30,8 @@ const Slider = (props) => {
   const handlePrevious = () => {
     if (currentImg.index <= 0) {
       return setCurrentImg({
-        index: props.currentImg.length - 1,
-        counter: props.currentImg.length,
+        index: props.pictures.length - 1,
+        counter: props.pictures.length,
       });
     } else {
       currentImg.index--;

@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    // margin-top: 2vw;
 
     img {
         object-fit: cover;
@@ -22,18 +21,24 @@
     }
 }
 
- @media screen and (max-width: 768px) {
-        .banner {
-            border-radius: 10px;
-            justify-content: flex-start; 
+@media screen and (max-width: 768px) {
+    .banner {
+        border-radius: 10px;
+        justify-content: flex-start;
+
         img {
             border-radius: 10px;
             height: 25vw;
         }
+
         .titleBanner {
             flex-direction: column;
             gap: 3%;
             margin-left: 4vw;
+
+            p {
+                font-size: 24px;
+            }
         }
     }
 }

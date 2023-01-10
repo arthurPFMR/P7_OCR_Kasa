@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../assets/database/db.json"
+import data from "../assets/database/db.json";
 import Banner from "../components/Banner";
 import GetallRentals from "../components/GetAllRentals";
 

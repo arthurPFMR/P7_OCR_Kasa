@@ -1,22 +1,20 @@
-import React from 'react';
-
+import React from "react";
 
 const Host = (props) => {
-    // console.log(props.name.split(" ")[0]);
-    const fullName = props.name.split(" ");
-    return (
-        <>
-        <div className="host">
-            <div className="hostIdentity">
-            <p className='hostFirstName'>{fullName[0]}</p>
-            <p className='hostName'>{fullName[1]}</p>
-            </div>
+  const fullName = props.name.split(" ");
+  return (
+    <>
+      <div className="host">
+        <div className="hostIdentity">
+          <p className="hostFirstName">{fullName[0]}</p>
+          <p className="hostName">{fullName[1]}</p>
+        </div>
         <div className="hostImg">
-            <img src={props.picture} alt="Le propriétaire de la location" />
+          <img src={props.picture} alt="Le propriétaire de la location" />
         </div>
-        </div>
-        </>
-    );
+      </div>
+    </>
+  );
 };
 
 export default Host;

@@ -7,14 +7,13 @@ import Rental from "../pages/Rental";
 
 const Router = () => {
   return (
-      <Routes>
-        <Route path="*" element={<NotFoundPage />}/>
-        <Route path="/" element={<Home />}/>
-        <Route path="/about" element={<About />}/>
-        <Route path="/rental/:id" element={<Rental />}/>
-      </Routes>
+    <Routes>
+      <Route path="*" element={<NotFoundPage />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/rental/:id" element={<Rental />} />
+    </Routes>
   );
 };
 
 export default Router;
-
