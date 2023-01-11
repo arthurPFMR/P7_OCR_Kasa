@@ -25,10 +25,6 @@ const Description = ({ rental }) => {
           />
         </div>
       </div>
-      {/* <div className="content">
-        <div className="description"></div>
-        <div className="equipments"></div>
-      </div> */}
     </div>
   );
 };

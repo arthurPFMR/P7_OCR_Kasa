@@ -8,24 +8,32 @@ component used to create collapsable content.
                     -title
                     -content
     => uses 1 state:
-                    -true/false
+                    -true or false
 default state is false  to hide content
+
+the toggle function asks collapse to set active
+if the state is not active, using 'onClick' event
+to deployed or closed content.
 */
+
 const Collapse = ({ title, content }) => {
-const [collapseOff, setCollapseOn] = useState(false);
+const [IsCollapseActive, setCollapseActive] = useState(false);
 
 const toggle = () => {
-    setCollapseOn(!collapseOff);
+    setCollapseActive(!IsCollapseActive);
 };
 
     return (
        <div className="collapse">
         <div className="collapseTitle" onClick={toggle}>{title}
-        {!collapseOff && <img className='arrows' src={arrowDown} alt="Développer le contenu" />}
-        {collapseOff && <img className='arrows' src={arrowUp} alt="Fermer le contenu" />}
+{/* content hidden: */}
+        {!IsCollapseActive && <img className='arrows' src={arrowDown} alt="Développer le contenu" />}
+{/* content deployed */}
+        {IsCollapseActive && <img className='arrows' src={arrowUp} alt="Fermer le contenu" />}
         </div>
         <div className="collapseContent">
-        {collapseOff && <li>{content}</li>}
+
+        {IsCollapseActive && <li>{content}</li>}
         </div>
         </div>
     );

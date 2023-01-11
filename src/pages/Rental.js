@@ -6,6 +6,14 @@ import Host from "../components/Host";
 import Tags from "../components/Tags";
 import Rating from "../components/Rating";
 import Collapse from "../components/Collapse";
+/*
+Rental page:
+get the 'id' in URL with useParams(),
+then, with the 'find' method, get the right rental
+from db.json.
+
+using 'map' method for iterate all tags and equipments list.
+*/
 
 const Rental = () => {
   const { id } = useParams();
