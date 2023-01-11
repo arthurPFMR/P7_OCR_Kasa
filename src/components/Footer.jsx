@@ -2,6 +2,7 @@ import React from "react";
 
 import FooterImg from "../assets/images/kasa-logo-footer.png";
 
+//component used to display element of the footer
 const Footer = () => {
   return (
     <div className="footer">

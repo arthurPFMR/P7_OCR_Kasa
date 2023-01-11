@@ -1,3 +1,6 @@
+// App.js is the highest component of the project
+// App.js send all the components 
+
 import React from "react";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";

@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+//component used to display elements of NotFoundPage.js
 const Error = () => {
   return (
     <div className="error">

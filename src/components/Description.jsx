@@ -1,10 +1,13 @@
 import React from "react";
-
+/*
+component used to display rental informations on Rental.js page
+  => uses 5 props:
+                  -title
+                  -location
+                  -tags
+                  -host name & host picture              
+*/
 const Description = ({ rental }) => {
-  // const host = {
-  //   name: rental.host.name,
-  //   picture: rental.host.picture
-  // }
   return (
     <div>
       <div className="infos">
@@ -22,10 +25,10 @@ const Description = ({ rental }) => {
           />
         </div>
       </div>
-      <div className="content">
+      {/* <div className="content">
         <div className="description"></div>
         <div className="equipments"></div>
-      </div>
+      </div> */}
     </div>
   );
 };

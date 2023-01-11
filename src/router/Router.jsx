@@ -1,3 +1,10 @@
+/*
+This component is the router of the application,
+uses to display all pages.
+-3 routes (for each page of website)
+-1 route for incorrect path
+*/
+
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import NotFoundPage from "../pages/NotFoundPage";

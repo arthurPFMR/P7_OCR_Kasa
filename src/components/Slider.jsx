@@ -2,7 +2,17 @@ import React, { useState } from "react";
 
 import previousArrow from "../assets/images/previousArrow.png";
 import nextArrow from "../assets/images/nextArrow.png";
-
+/*
+component used to display pictures carousel on Rental.js
+ => uses 1 props:
+                 -pictures
+ => uses 2 states: 
+                  -index (of pictures[])
+                  -counter (of pictures[])
+ => uses 2 functions:
+                     -handleNext (display next picture) 
+                     -handlePrevious (display previous picture)                 
+*/
 const Slider = (props) => {
   const [currentImg, setCurrentImg] = useState({ index: 0, counter: 1 });
 

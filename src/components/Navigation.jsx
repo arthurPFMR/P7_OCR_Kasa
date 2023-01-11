@@ -1,7 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/kasa-logo.png";
-
+/*
+component used to display the Header of all page,
+contains the navigation link.
+*/
 const Navigation = () => {
   return (
     <div className="header">

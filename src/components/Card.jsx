@@ -1,6 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+/*
+component used to display cards on Home.js
+  => uses 3 props:
+                  -id of rental
+                  -cover images for the card
+                  -title of the card
+*/
 const Card = (props) => {
   return (
     <NavLink to={"/rental/" + props.id} className="to-rental-page">
