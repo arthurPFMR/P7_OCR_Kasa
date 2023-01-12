@@ -1,6 +1,6 @@
 import React from "react";
 import { Navigate, useParams } from "react-router-dom";
-import data from "../assets/database/db.json";
+import allData from "../assets/database/db.json";
 import Slider from "../components/Slider";
 import Host from "../components/Host";
 import Tags from "../components/Tags";
@@ -18,7 +18,8 @@ using 'map' method for iterate all tags and equipments list.
 const Rental = () => {
   const { id } = useParams();
 
-  const rental = data.find((data) => data.id === id);
+  const rental = allData.find((data) => data.id === id);
+
   return !rental ? (
     <Navigate to="/notfoundpage" />
   ) : (

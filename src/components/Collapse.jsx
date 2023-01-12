@@ -9,7 +9,7 @@ component used to create collapsable content.
                     -content
     => uses 1 state:
                     -true or false
-default state is false  to hide content
+default state is false  makes down
 
 the toggle function asks collapse to set active
 if the state is not active, using 'onClick' event
@@ -25,14 +25,13 @@ const toggle = () => {
 
     return (
        <div className="collapse">
-        <div className="collapseTitle" onClick={toggle}>{title}
+        <div className="collapseTitle">{title}
 {/* content hidden: */}
-        {!IsCollapseActive && <img className='arrows' src={arrowDown} alt="Développer le contenu" />}
+        {!IsCollapseActive && <img className='arrows' src={arrowDown} alt="Développer le contenu" onClick={toggle}/>}
 {/* content deployed */}
-        {IsCollapseActive && <img className='arrows' src={arrowUp} alt="Fermer le contenu" />}
+        {IsCollapseActive && <img className='arrows' src={arrowUp} alt="Fermer le contenu" onClick={toggle}/>}
         </div>
         <div className="collapseContent">
-
         {IsCollapseActive && <li>{content}</li>}
         </div>
         </div>
