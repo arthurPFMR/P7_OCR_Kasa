@@ -14,7 +14,6 @@ from db.json.
 
 using 'map' method for iterate all tags and equipments list.
 */
-
 const Rental = () => {
   const { id } = useParams();
 
